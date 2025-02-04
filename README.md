@@ -1,3 +1,5 @@
+## Python Version *3.12.4*
+
 # Mask Detection Model
 
 This project implements a mask detection system using a deep learning model deployed with Django. It identifies whether individuals in images are wearing masks, contributing to health and safety measures.
