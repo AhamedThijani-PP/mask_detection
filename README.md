@@ -50,49 +50,11 @@ To set up the project locally, follow these steps:
 
 - Access the application at **http://127.0.0.1:8000/**
 
-# Usage
+## Usage
 - Upload Image: Use the web interface to upload an image.
 - View Results: The application will display the image with annotations indicating mask detection results.
 
-# Project Structure
-```
-mask_detection/
-├── mask_detect/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── mask_detection/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── models/
-│   └── mask_detector.model
-├── static/
-│   ├── css/
-│   ├── images/
-│   └── js/
-├── templates/
-│   └── index.html
-├── db.sqlite3
-├── manage.py
-└── requirements.txt
-
-- mask_detect/: Contains the Django app for mask detection.
-- mask_detection/: Project settings and configurations.
-- models/: Directory for storing trained models.
-- static/: Static files (CSS, JavaScript, images).
-- templates/: HTML templates.
-- db.sqlite3: SQLite database file.
-- manage.py: Django management script.
-- requirements.txt: List of Python dependencies.
-
-# Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -102,10 +64,32 @@ Contributions are welcome! Please follow these steps:
 - Push to the branch: git push origin feature/YourFeature.
 - Open a pull request.
 
-# License
+## Project Structure
 
-This project is licensed under the MIT License.
-
-```pgsql
-Feel free to customize this template to better fit the specifics of your project.
-::contentReference[oaicite:0]{index=0}
+   ```bash
+   mask_detection/
+   ├── mask_detect/
+   │   ├── migrations/
+   │   ├── __init__.py
+   │   ├── admin.py
+   │   ├── apps.py
+   │   ├── models.py
+   │   ├── tests.py
+   │   └── views.py
+   ├── mask_detection/
+   │   ├── __init__.py
+   │   ├── asgi.py
+   │   ├── settings.py
+   │   ├── urls.py
+   │   └── wsgi.py
+   ├── models/
+   │   └── mask_detector.model
+   ├── static/
+   │   ├── css/
+   │   ├── images/
+   │   └── js/
+   ├── templates/
+   │   └── index.html
+   ├── db.sqlite3
+   ├── manage.py
+   └── requirements.txt
