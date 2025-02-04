@@ -1,4 +1,4 @@
-*Python Version *3.12.4* for error free experience*
+# Python Version *3.12.4* for error free experience
 
 # Mask Detection Model
 
