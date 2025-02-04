@@ -1,0 +1,181 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Face Mask Detection | Tiji tech</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="{% static 'images/logo2.png' %}" sizes="32x32" type="image/png">
+    <!-- upload -->
+    <link rel="stylesheet" href="{% static 'css/upload.css' %}">
+    <!-- custom.css -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <style>
+        #banner header img{
+            max-width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url('{% static "images/banner-bk.jpg" %}');">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="{% static 'images/logo21.png' %}" alt="logo">
+                    </div>
+                </div>
+            </header>
+            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
+            	A Smarter Way<br>
+                To Ensure Safety
+            </h1>
+            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
+                Protecting lives with AI-powered mask detection. Stay safe, stay compliant.
+            </p>
+            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
+        </div>
+    </div>
+    <!-- feature (skew background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h2 class="font-weight-bold">Accurate and Trustworthy</h2>
+                    <p class="my-4">Ensuring safety with precision, our AI-driven mask detection provides reliable and accurate monitoring, ensuring compliance in every environment.</p>
+                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
+                    <img src="{% static 'images/feature-1.png' %}" alt="Take a look inside" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature (green background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
+        <div class="container">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
+                    <h2 class="font-weight-bold">See Safety in Action</h2>
+                    <p class="my-4">
+                        AI-driven mask detection ensures safety by monitoring compliance and reducing health risks.
+                    </p>
+                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
+                    <img src="{% static 'images/feature-2.png' %}" alt="Safe and reliable" class="mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- model heading -->
+    <div class="container my-5 py-2" id="price-table">
+        <h2 class="text-center font-weight-bold d-block mb-3">Check Our Model</h2>
+    </div>
+    <!--model-->
+    <div class="file-upload-section">
+        <div class="wrapper">
+          <div class="container1">
+            <h1>Upload a file</h1>
+            <div class="upload-container">
+              <div class="border-container">
+                <div class="icons fa-4x">
+                  <i class="fas fa-file-image" data-fa-transform="shrink-3 down-2 left-6 rotate--45"></i>
+                  <i class="fas fa-file-alt" data-fa-transform="shrink-2 up-4"></i>
+                  <i class="fas fa-file-pdf" data-fa-transform="shrink-3 down-2 right-6 rotate-45"></i>
+                </div>
+                <!--<input type="file" id="file-upload">-->
+                <p>Drag and drop files here, or 
+                  <a href="{% url 'upload-image' %}" id="file-browser">browse</a> your computer.</p>
+                <p>OR</p>
+                <p> Use your <a href="{% url 'live_construction' %}" id="file-browser">Camera</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    <!-- contact -->
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url('{% static "images/contact-bk.jpg" %}');">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        Have questions about our AI-powered mask detection? <br>Contact us for reliable solutions and seamless integration.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : ahammedthijanipp@gmail.com</li>
+                        <li>Phone : +91 9895797591</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                    	<div class="row">
+	                        <div class="form-group col-md-6">
+	                            <label for="name">Your Name</label>
+	                            <input type="name" class="form-control" id="name">
+	                        </div>
+	                        <div class="form-group col-md-6">
+	                            <label for="Email">Your Email</label>
+	                            <input type="email" class="form-control" id="Email">
+	                        </div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label for="message">Message</label>
+	                        <textarea class="form-control" id="message" rows="3"></textarea>
+	                    </div>
+                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- copyright -->
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Tiji Tech, Ahamed Thijani PP.
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-inline-block text-center ml-2">
+                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- AOS -->
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/upload.js' %}"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+</body>
+
+</html>
