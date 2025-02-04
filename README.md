@@ -26,3 +26,26 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/AhamedThijani-PP/mask_detection.git
    cd mask_detection
+   
+2. **Create a Virtual Environment**:
+
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+
+3. **Install Dependencies**:
+
+   ```bash
+   pip install -r requirements.txt
+
+4. **Apply Migrations**:
+
+   ```bash
+   python manage.py migrate
+
+5. **Run the Development Server**:
+
+   ```bash
+   python manage.py runserver
+
+- Access the application at **http://127.0.0.1:8000/**
