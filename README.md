@@ -55,7 +55,7 @@ To set up the project locally, follow these steps:
 - View Results: The application will display the image with annotations indicating mask detection results.
 
 # Project Structure
-
+```
 mask_detection/
 ├── mask_detect/
 │   ├── migrations/
